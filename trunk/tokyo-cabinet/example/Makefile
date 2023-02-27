@@ -15,8 +15,8 @@ MYBINS = tcutilex tchdbex tcbdbex tcfdbex tctdbex tcadbex tctchat.cgi tctsearch.
 
 # Building binaries
 CC = gcc
-CFLAGS = -I. -I.. -ansi -Wall -pedantic -fsigned-char -O2
-C99FLAGS = -I. -I.. -std=c99 -Wall -pedantic -fsigned-char -O2
+CFLAGS = -I. -I.. -ansi -Wall -pedantic -fsigned-char -O0 -ggdb3
+C99FLAGS = -I. -I.. -std=c99 -Wall -pedantic -fsigned-char -O0 -ggdb3
 LDFLAGS =
 LIBS = -L. -L.. -ltokyocabinet -lz -lbz2 -lpthread -lm -lc
 LDENV = LD_RUN_PATH=/lib:/usr/lib:$(HOME)/lib:/usr/local/lib:.:..
