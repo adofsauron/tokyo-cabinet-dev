@@ -6,4 +6,8 @@ make clean
 
 make -j`nproc`
 
-cd -
+cd example
+
+make
+
+cd ../..
