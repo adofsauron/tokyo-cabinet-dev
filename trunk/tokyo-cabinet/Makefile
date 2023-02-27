@@ -50,7 +50,7 @@ CPPFLAGS = -I. -I$(INCLUDEDIR) -I/root/include -I/usr/local/include -DNDEBUG -D_
   -D_TC_PREFIX="\"$(prefix)\"" -D_TC_INCLUDEDIR="\"$(INCLUDEDIR)\"" \
   -D_TC_LIBDIR="\"$(LIBDIR)\"" -D_TC_BINDIR="\"$(BINDIR)\"" -D_TC_LIBEXECDIR="\"$(LIBEXECDIR)\"" \
   -D_TC_APPINC="\"-I$(INCLUDEDIR)\"" -D_TC_APPLIBS="\"-L$(LIBDIR) -ltokyocabinet -lbz2 -lz -lrt -lpthread -lm -lc \""
-CFLAGS = -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2
+CFLAGS = -ggdb3 -O0 -std=c99 -Wall -fPIC -fsigned-char -O0
 LDFLAGS = -L. -L$(LIBDIR) -L/root/lib -L/usr/local/lib
 CMDLDFLAGS = 
 LIBS = -lbz2 -lz -lrt -lpthread -lm -lc 
