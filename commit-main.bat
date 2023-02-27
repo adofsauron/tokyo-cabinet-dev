@@ -8,7 +8,7 @@ git pull
 
 git add .
 
-git commit -m "fix cascades dev"
+git commit -m "fix tokyo cabinet dev"
 
 git push -u origin main
 
